@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS hogwarts_db;
+
+CREATE DATABASE hogwarts_db;
