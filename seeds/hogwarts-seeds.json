@@ -1,0 +1,58 @@
+[
+    {
+        "teacher": "Alastor Moody",
+        "subject": "Defence Against the Dark Arts" ,
+        "background":"Former Auror for the Ministry"
+        
+
+    },
+    {
+        "teacher": "Charity Burbage",
+        "subject": "Muggle Studies",
+        "background":"Captured by Voldemort and eaten by Nagini"
+        
+    },
+    {
+        "teacher": "Sybill Trelawney",
+        "subject": "Divination",
+        "background": "Responsible for the prophecy of The Chosen One"
+        
+    },
+    {
+        "teacher": "Rubeus Hagrid",        
+        "subject": "Care of Magical Creatures",
+        "background": "Half-Giant and Keeper of Keys and Grounds"
+    
+    },
+    {
+        "teacher": "Severus Snape",
+        "subject": "Potions",
+        "background":"Head of Slytherin House and still in love with Harry's Mum",
+        "headofslytherin": true
+    },
+    {
+        "teacher": "Filius Flitwick",
+        "subject": "Charms",
+        "background": "Head of Ravenclaw House and conductor of the Hogwarts choir",
+        "headofravenclaw": true
+    },
+    {
+        "teacher": "Minerva McGonagall",
+        "subject": "Transfiguration",
+        "background": "Head of Gryffindor House and Deputy Headmistress to Dumbledore",
+        "headofgryffindor": true
+    },
+    {
+        "teacher": "Pomona Sprout",
+        "subject": "Herbology",
+        "background": "Head of Hufflepuff House",
+        "headofhufflepuff": true
+    },
+    {
+        "teacher": "Rolanda Hooch",
+        "subject": "Quidditch",
+        "background": "Broom Flying Instructor and Quidditch referee"
+    
+    }
+   
+]
