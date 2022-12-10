@@ -1,0 +1,38 @@
+[
+  { 
+    "subject_name": "Defence Against the Dark Arts", 
+    "teacher_id": 1 
+},
+  { 
+    "subject_name": "Muggle Studies", 
+    "teacher_id": 2 
+},
+  { 
+    "subject_name": "Divination", 
+    "teacher_id": 3 
+},
+  { 
+    "subject_name": "Care of Magical Creatures", 
+    "teacher_id": 4 
+},
+  { 
+    "subject_name": "Potions", 
+    "teacher_id": 5 
+},
+  { 
+    "subject_name": "Charms", 
+    "teacher_id": 6 
+},
+  { 
+    "subject_name": "Transfiguration", 
+    "teacher_id": 7 
+},
+  { 
+    "subject_name": "Herbology", 
+    "teacher_id": 8 
+},
+  { 
+    "subject_name": "Quidditch", 
+    "teacher_id": 9 
+}
+]
