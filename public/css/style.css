@@ -24,6 +24,10 @@ header img {
   height: 110px;
 }
 
+.hero {
+  background-image: url("../images/Screenshot\ 2022-12-10\ at\ 3.08.40\ PM.png");
+}
+
 /* .row {
   display: flex;
 }
