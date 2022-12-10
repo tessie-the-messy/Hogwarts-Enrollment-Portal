@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  background-color: #6C6868;
+  background-color: #36454f;
+  opacity: 95%;
 }
 
 h1 {
