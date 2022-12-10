@@ -28,25 +28,25 @@
         "teacher": "Severus Snape",
         "subject": "Potions",
         "background":"Head of Slytherin House and still in love with Harry's Mum",
-        "headofslytherin": true
+        "headofhouse": true
     },
     {
         "teacher": "Filius Flitwick",
         "subject": "Charms",
         "background": "Head of Ravenclaw House and conductor of the Hogwarts choir",
-        "headofravenclaw": true
+        "headofhouse": true
     },
     {
         "teacher": "Minerva McGonagall",
         "subject": "Transfiguration",
         "background": "Head of Gryffindor House and Deputy Headmistress to Dumbledore",
-        "headofgryffindor": true
+        "headofhouse": true
     },
     {
         "teacher": "Pomona Sprout",
         "subject": "Herbology",
         "background": "Head of Hufflepuff House",
-        "headofhufflepuff": true
+        "headofhouse": true
     },
     {
         "teacher": "Rolanda Hooch",
