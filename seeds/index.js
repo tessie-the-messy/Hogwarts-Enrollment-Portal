@@ -1,29 +1,15 @@
-const sequelize = require('../config/connection');
-const { Student, Teacher, Subject, Roster } = require('../models');
+const sequelize = require("../config/connection");
+const { Teacher } = require("../models");
 
-const hogwartsSeedData = require('./hogwarts-seeds.json');
+const teacherData = require("./teacherData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const readers = await Reader.bulkCreate(readerSeedData, {
+  const teacher = await Teacher.bulkCreate(teacherData, {
     individualHooks: true,
     returning: true,
   });
-
-  for (const { id } of readers) {
-    const newCard = await LibraryCard.create({
-      reader_id: id,
-    });
-  }
-
-  for (const book of bookSeedData) {
-    const newBook = await Book.create({
-      ...book,
-      // Attach a random reader ID to each book
-      reader_id: readers[Math.floor(Math.random() * readers.length)].id,
-    });
-  }
 
   process.exit(0);
 };
