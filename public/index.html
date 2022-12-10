@@ -11,14 +11,69 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../public/css/style.css" />
   </head>
 
   <body>
-    <div class="row">
+    <header class="container-fluid">
+      <img src="./images/Hogwarts-Logo.png" alt="Hogwarts-Crest" />
+      <h1>Hogwarts</h1>
+      <h2>School of Witchcraft & Wizardry</h2>
+    </header>
+    <main>
+      <div class="col lg-5">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Current Students</h5>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark">Login</button>
+              </div>
+              <br />
+            </form>
+            <h5 class="card-title">New Student? Create Account:</h5>
+            <form>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" aria-label="First name" />
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" aria-label="Last name" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark">Enroll</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col md-7">
+        <p>About</p>
+      </div>
+    </main>
+    <!-- <div class="row">
       <div class="column"></div>
       <div class="column"></div>
-    </div>
+    </div> -->
     <!-- <div class="container text-center">
       <div class="row">
         <div class="col-sm-8">col-sm-8</div>
