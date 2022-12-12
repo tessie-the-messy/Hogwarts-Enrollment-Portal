@@ -43,13 +43,13 @@ Student.init(
         len: [6],
       },
     },
-    house_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "house",
-        key: "id",
-      },
-    },
+    // house_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "house",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     hooks: {
