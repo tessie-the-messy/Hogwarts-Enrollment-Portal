@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  background-color: #36454f;
-  opacity: 95%;
+  padding: 0;
+  /* background-color: #726d79; */
+  opacity: 90%;
+  font-family: "Harry Potter", sans-serif;
 }
 
 h1 {
-  font-family: "Harry Potter", sans-serif;
   color: #b28104;
   font-size: 68px;
   padding: 20px;
@@ -25,15 +26,26 @@ header img {
 }
 
 .hero {
-  background-image: url("../images/Screenshot\ 2022-12-10\ at\ 3.08.40\ PM.png");
+  background: url("/public/images/Screenshot\ 2022-12-11\ at\ 5.07.07\ PM.png") no-repeat center;
+  background-size: cover;
 }
 
-/* .row {
+/* #scrollpage {
+  background: url("/public/images/scroll.png") no-repeat center;
+  background-size: cover;
+} */
+
+
+#main {
   display: flex;
 }
 
-.column {
-  flex: 50%;
+/* #navbar {
+  flex: 25%;
+}
+
+#content {
+  flex: 75%;
 } */
 
 /* @media screen and (max-width: 600px) {
