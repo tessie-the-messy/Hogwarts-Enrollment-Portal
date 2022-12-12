@@ -18,7 +18,7 @@ Roster.belongsTo(Subject, {
 });
 
 Roster.hasMany(Student, {
-  foreignKey: "student_id",
+  foreignKey: "id",
   onDelete: "CASCADE",
 });
 
