@@ -2,14 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #726d79; */
   opacity: 90%;
   font-family: "Harry Potter", sans-serif;
 }
 
 h1 {
   color: #b28104;
-  font-size: 68px;
+  font-size: 72px;
   padding: 20px;
   text-align: center;
 }
@@ -18,6 +17,7 @@ h2 {
   font-family: "Harry Potter", sans-serif;
   color: #b28104;
   text-align: center;
+  font-size: 44px;
 }
 
 header img {
@@ -38,6 +38,11 @@ header img {
   border-radius: 2%;
   width: 100%;
   height: 100%;
+}
+
+.scrolltext {
+  margin: 45px;
+  font-size: 30px;
 }
 
 #main {
