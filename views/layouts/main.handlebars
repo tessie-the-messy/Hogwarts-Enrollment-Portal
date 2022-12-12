@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,81 +14,22 @@
 
     <link rel="stylesheet" href="/public/css/style.css" />
   </head>
-  <div id = "main">
-<div id="navbar">
-{{> nav}}
-</div>
-<div id="content">
-    {{#if loggedIn}}
-      {{> demo}}
-    {{else}}
-      {{> demo2}}
-    {{/if}}
-</div>
-</div>
+  <div id="main">
+
+  </div>
   <body class="hero">
     <header class="container-fluid">
       <img src="/public/images/Hogwarts-Logo.png" alt="Hogwarts-Crest" />
       <h1>Hogwarts</h1>
       <h2>School of Witchcraft & Wizardry</h2>
     </header>
-    <main class="container">
-      <div class="row">
-        <div class="col lg-5">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Current Students</h5>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label text-dark">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label text-dark">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" />
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-dark text-light">Login</button>
-                </div>
-                <br />
-              </form>
-              <h5 class="card-title text-dark">New Student? Create Account:</h5>
-              <form>
-                <div class="mb-3">
-                  <label for="firstName" class="form-label text-dark">First Name</label>
-                  <input type="text" class="form-control" aria-label="First name" />
-                </div>
-                <div class="mb-3">
-                  <label for="lastName" class="form-label text-dark">Last Name</label>
-                  <input type="text" class="form-control" aria-label="Last name" />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label text-dark">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label text-dark">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" />
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-dark text-light">Enroll</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col lg-7">
-          <p>About</p>
-        </div>
-      </div>
-    </main>
-    
+
     {{{body}}}
   </body>
 </html>
 
-{{!-- this is the sample handlebars code from the mini-project to use as a reference: --}}
-  {{!-- 
+{{! this is the sample handlebars code from the mini-project to use as a reference: }}
+{{!-- 
   <body>
     <div class="flex-column justify-space-around">
       <header class="display-flex justify-space-between align-center p-2">

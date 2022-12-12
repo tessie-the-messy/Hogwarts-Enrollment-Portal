@@ -6,7 +6,7 @@ const apiRoutes = require("./api");
 
 // router.use("/", homeRoutes);
 router.get("/", (req, res) => {
-  res.render("all", { loggedIn: false });
+  res.render("login", { loggedIn: false });
 });
 router.use("/api", apiRoutes);
 
