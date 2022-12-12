@@ -9,6 +9,11 @@ class Student extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
+  toJSON() {
+    const values = Object.assign({}, this.get());
+    delete values.password;
+    return values;
+  }
 }
 
 // Student.init => id, first_name, last_name, email, password, house
@@ -39,6 +44,7 @@ Student.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
+
       validate: {
         len: [6],
       },
@@ -58,6 +64,11 @@ Student.init(
         return newUserData;
       },
     },
+    // defaultScope: {
+    //   attributes: {
+    //     exclude: ["password"],
+    //   },
+    // },
 
     sequelize,
     timestamps: false,

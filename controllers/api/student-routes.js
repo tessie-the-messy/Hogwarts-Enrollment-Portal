@@ -1,14 +1,19 @@
 const router = require("express").Router();
-const { Student } = require("../../models");
+const sequelize = require("../../config/connection");
+const { Student, House } = require("../../models");
 
 // CREATE newStudent
 router.post("/", async (req, res) => {
   try {
+    const randomHouse = await House.findOne({
+      order: [sequelize.fn("rand")],
+    });
     const dbStudentData = await Student.create({
       first_name: req.body.first_name,
       last_name: req.body.last_name,
       email: req.body.email,
       password: req.body.password,
+      house_id: randomHouse.id,
     });
 
     req.session.save(() => {
@@ -25,6 +30,9 @@ router.post("/", async (req, res) => {
 // Login
 router.post("/login", async (req, res) => {
   try {
+    //     if (!req.session.loggedIn) {
+    //   res.redirect('/login');
+    // } else {
     const dbStudentData = await Student.findOne({
       where: {
         email: req.body.email,
