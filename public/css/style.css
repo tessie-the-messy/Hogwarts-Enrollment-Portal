@@ -30,11 +30,12 @@ header img {
   background-size: cover;
 }
 
-/* #scrollpage {
-  background: url("/public/images/scroll.png") no-repeat center;
-  background-size: cover;
-} */
-
+#scrollpage {
+  /* background: url("/public/images/scroll.png") no-repeat center; */
+  border-radius: 70px;
+  width: 60px;
+  height: 75px;
+}
 
 #main {
   display: flex;
