@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   opacity: 90%;
-  font-family: "Harry Potter", sans-serif;
 }
 
 h1 {
   color: #b28104;
+  font-family: "Harry Potter", sans-serif;
   font-size: 72px;
   padding: 20px;
   text-align: center;
@@ -30,6 +30,10 @@ header img {
   background-size: cover;
 }
 
+#login-form {
+  font-family: "La Belle Aurore", cursive;
+}
+
 #scrollpage {
   background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
   background-repeat: no-repeat;
@@ -43,6 +47,7 @@ header img {
 .scrolltext {
   margin: 45px;
   font-size: 30px;
+  font-family: "La Belle Aurore", cursive;
 }
 
 #main {
