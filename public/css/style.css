@@ -53,3 +53,26 @@ header img {
     width: 100%;
   }
 } */
+
+/* studentSchedule */
+.scheduleHeader{
+  text-align: center;
+  font-family: "Harry Potter", sans-serif;
+}
+
+.day{
+  text-align: center;
+}
+
+.subject{
+  text-align: center;
+}
+
+.teacher{
+  text-align: center;
+}
+.time{
+  font-style: italic;
+  text-align: center;
+}
+/* end studentSchedule */
