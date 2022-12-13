@@ -73,6 +73,10 @@ header img {
   display: flex;
 }
 
+#logo {
+  margin-top: 35
+}
+
 /* #navbar {
   flex: 25%;
 }
