@@ -2,9 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-* {
   cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
 }
 
@@ -87,6 +84,26 @@ main {
   margin-top: 35;
 }
 
+.profile-header {
+  font-family: "Harry Potter", sans-serif;
+}
+
+.profile-info {
+  font-family: "Vollkorn", serif;
+}
+
+.house-header {
+  font-family: "Harry Potter", sans-serif;
+}
+
+.house-name {
+  font-family: "Harry Potter", sans-serif;
+}
+
+.house-desc {
+  font-family: "Vollkorn", serif;
+}
+
 /* #navbar {
   flex: 25%;
 }
@@ -102,7 +119,7 @@ main {
 } */
 
 /* studentSchedule */
-.scheduleHeader{
+.scheduleHeader {
   color: #b28104;
   font-size: 68px;
   padding: 20px;
@@ -110,21 +127,21 @@ main {
   font-family: "Harry Potter", sans-serif;
 }
 
-.day{
+.day {
   text-align: center;
   font-family: "Vollkorn", serif;
 }
 
-.subject{
+.subject {
   text-align: center;
   font-family: "Vollkorn", serif;
 }
 
-.teacher{
+.teacher {
   text-align: center;
   font-family: "Vollkorn", serif;
 }
-.time{
+.time {
   font-style: italic;
   text-align: center;
   font-family: "Vollkorn", serif;
