@@ -14,8 +14,7 @@ const loginFormHandler = async (event) => {
         });
     
         if (response.ok) {
-          document.location.replace('/');
-          console.log('asldkfj')
+          document.location.replace('/landingpage');
         } else {
           alert('Failed to log in.');
           console.log('Failed to log in')
