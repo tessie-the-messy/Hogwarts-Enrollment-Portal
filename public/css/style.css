@@ -26,7 +26,7 @@ header img {
 }
 
 .hero {
-  background: url("/public/images/Screenshot\ 2022-12-11\ at\ 5.07.07\ PM.png") no-repeat center;
+  background: url("/public/images/Screenshot\ 2022-12-11\ at\ 5.07.07\ PM.png") no-repeat;
   background-size: cover;
 }
 
