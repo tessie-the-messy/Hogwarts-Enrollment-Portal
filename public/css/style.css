@@ -97,3 +97,33 @@ main {
     width: 100%;
   }
 } */
+
+/* studentSchedule */
+.scheduleHeader{
+  color: #b28104;
+  font-size: 68px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Harry Potter", sans-serif;
+}
+
+.day{
+  text-align: center;
+  font-family: "Vollkorn", serif;
+}
+
+.subject{
+  text-align: center;
+  font-family: "Vollkorn", serif;
+}
+
+.teacher{
+  text-align: center;
+  font-family: "Vollkorn", serif;
+}
+.time{
+  font-style: italic;
+  text-align: center;
+  font-family: "Vollkorn", serif;
+}
+/* end studentSchedule */
