@@ -18,7 +18,7 @@ router.post("/", async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
-
+      req.session.student = dbStudentData;
       res.status(200).json(dbStudentData);
     });
   } catch (err) {
@@ -30,9 +30,7 @@ router.post("/", async (req, res) => {
 // Login
 router.post("/login", async (req, res) => {
   try {
-    //     if (!req.session.loggedIn) {
-    //   res.redirect('/login');
-    // } else {
+    console.log(req.body);
     const dbStudentData = await Student.findOne({
       where: {
         email: req.body.email,
@@ -57,11 +55,10 @@ router.post("/login", async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
-
-      res
-        .status(200)
-        .json({ student: dbStudentData, message: "You are now logged in!" });
+      // .json({ student: dbStudentData, message: "You are now logged in!" });
     });
+
+    res.render("landingpage", { dbStudentData });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
