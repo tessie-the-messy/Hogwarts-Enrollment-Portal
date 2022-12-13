@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+* {
+  cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;
+}
+
 h1 {
   color: #b28104;
   font-family: "Harry Potter", sans-serif;
@@ -17,6 +21,8 @@ h2 {
   color: #b28104;
   text-align: center;
   font-size: 44px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 header img {
@@ -27,6 +33,10 @@ header img {
 .hero {
   background: url("/public/images/Screenshot\ 2022-12-11\ at\ 5.07.07\ PM.png") no-repeat;
   background-size: cover;
+}
+
+main {
+  padding: 20px;
 }
 
 #login-form {
@@ -74,7 +84,7 @@ header img {
 }
 
 #logo {
-  margin-top: 35
+  margin-top: 35;
 }
 
 /* #navbar {
