@@ -27,13 +27,13 @@ const loginFormHandler = async (event) => {
       }
 };
 
-const createFormHandler = async (event) => {
+const enrollFormHandler = async (event) => {
     event.preventDefault();
   
     const firstname = document.querySelector('#first-name').value.trim();
-    const lastname = document.querySelector('#last.name').value.trim();
-    const email = document.querySelector('#email-create').value.trim();
-    const password = document.querySelector('#password-create').value.trim();
+    const lastname = document.querySelector('#last-name').value.trim();
+    const email = document.querySelector('#email-enroll').value.trim();
+    const password = document.querySelector('#password-enroll').value.trim();
   
     if (username && email && password) {
       const response = await fetch('/api/users', {
@@ -56,4 +56,4 @@ const createFormHandler = async (event) => {
 
 document
   .querySelector('.enroll-form')
-  .addEventListener('submit', createFormHandler);
+  .addEventListener('submit', enrollFormHandler);
