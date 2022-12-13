@@ -64,6 +64,7 @@ Student.init(
         return newUserData;
       },
     },
+    // **on the Student.js model, do we need lines 67-71 commented back in?
     // defaultScope: {
     //   attributes: {
     //     exclude: ["password"],
