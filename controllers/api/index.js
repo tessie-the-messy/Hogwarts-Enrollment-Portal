@@ -1,3 +1,6 @@
 const router = require("express").Router();
-router.get("/", () => {});
+
+const studentRoutes = require("./student-routes");
+
+router.use("/students", studentRoutes);
 module.exports = router;

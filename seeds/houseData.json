@@ -1,0 +1,22 @@
+[
+{
+    "house_name":"Gryffindor", 
+    "description": "Gryffindor was founded by Godric Gryffindor, who is considered one of the most brilliant wizards of his time. The Sorting Hat once belonged to him, who along with the rest of the founders of Hogwarts, enchanted the hat with their combined intelligence so it would sort all new students into their respective houses. Gryffindor's emblematic animal is a lion, and its colors are scarlet and gold, which fit with the traits associated with this house. The lion represents courage, regality, and power, and Gryffindor is known for being the house that values bravery, daring, nerve, and chivalry, which are some traits Godric Gryffindor himself valued most. Each Hogwarts house also represents one of the four elements, with Gryffindor corresponding to the element of fire, thus why it's represented by the colors scarlet and gold. Gryffindor has been home to some of the most notable wizards in history, such as Albus Dumbledore, Minerva McGonagall, Sirius Black, Lily Evans, James Potter, Remus Lupin, Ron Weasley, Hermione Granger, and Harry Potter. Each Hogwarts house also has its own ghost, and in Gryffindor’s case, it was the unforgettable Nearly Headless Nick.",
+    "file_name": "gryffindorCrest.jpg"
+},
+{
+    "house_name": "Hufflepuff",
+    "description": "Hufflepuff was founded by Helga Hufflepuff, who stood out from the rest of the founders of Hogwarts for accepting all students without preference, though there were obviously certain traits that she valued most, such as hard work, dedication, patience, loyalty, and fair play. Hufflepuff's emblematic animal is the badger, which represents hard work, loyalty and tenacity, and this house corresponds to the element earth, which can be seen in the background of the house's crest in the shape of leaves, along with the colors yellow and black. The Fat Friar is the house's ghost, and the most notable Hufflepuffs in the history of the Wizarding World are Newt Scamander, Pomona Sprout, Nymphadora Tonks, and Cedric Diggory.",
+    "file_name": "hufflepuffCrest.jpg"
+},
+{
+    "house_name":"Ravenclaw",
+    "description":"Ravenclaw was founded by Rowena Ravenclaw, a witch noted for her intelligence and creativity. The house of Ravenclaw, just like Rowena, values intelligence, knowledge, curiosity, creativity and wit, and it corresponds to the element of air. Its emblematic animal is the eagle, representing intelligence and wisdom as it soars where others cannot climb, and its colors are blue and bronze, with the element air present in the background of the house's crest. Among Ravenclaw's particularities is that, instead of giving a password, its students have to solve a riddle in order to enter the Ravenclaw common room. Ravenclaw's ghost is the Grey Lady, the ghost of Rowena's daughter, Helena, who was murdered by the Bloody Baron, who committed suicide once he realized what he had done. The most notable Ravenclaws are Filius Flitwick, Xenophilius Lovegood, Garrick Ollivander, Gilderoy Lockhart, Cho Chang, and Luna Lovegood.",
+    "file_name":"ravenclawCrest.jpg"
+},
+{
+    "house_name": "Slytherin",
+    "description":"The house of Slytherin was founded by Salazar Slytherin, one of the greatest wizards of the age and best known for being a parselmouth and a skilled Legilimens, but also for his radical ideas about Muggles and Muggle-born wizards. The traits that Salazar Slytherin valued most were ambition, leadership, self-preservation, cunning, and resourcefulness, which became the ones associated with the Slytherin house. Its symbol is a serpent, which represents resourcefulness and ambition, and its colors are green and silver. Slytherin represents the element of water, which appears behind the serpent in the house's crest. Due to his ideas against Muggles and Muggle-born students, Salazar Slytherin left Hogwarts and never returned however, he built the Chamber of Secrets, which concealed a basilisk, in hopes that his heir would return to the school and unleash the horror within the chamber so the basilisk would purge the school of those who, in Slytherin's view, were unworthy to study magic. The Bloody Baron is this house's ghost, and Slytherin saw the raise of many outstanding (though also dangerous) wizards and witches, such as Merlin (yes, that one), Letha Lestrange, Tom Riddle, Bellatrix Black, Draco Malfoy, and Severus Snape.",
+    "file_name":"slytherinCrest.jpg"
+}
+]
