@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  opacity: 90%;
 }
 
 h1 {
@@ -31,7 +30,19 @@ header img {
 }
 
 #login-form {
-  font-family: "La Belle Aurore", cursive;
+  font-family: "Vollkorn", serif;
+  font-size: 20px;
+}
+
+#card-outline {
+  opacity: 70%;
+}
+
+.card-title {
+  font-family: "Vollkorn", serif;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
 }
 
 #scrollpage {
@@ -46,8 +57,16 @@ header img {
 
 .scrolltext {
   margin: 45px;
+  font-size: 38px;
+  font-family: "La Belle Aurore", cursive;
+  text-align: center;
+}
+
+.tuitiontext {
+  margin: 45px;
   font-size: 30px;
   font-family: "La Belle Aurore", cursive;
+  text-align: center;
 }
 
 #main {
