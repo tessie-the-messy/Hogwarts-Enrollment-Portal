@@ -2,12 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  opacity: 90%;
-  font-family: "Harry Potter", sans-serif;
 }
 
 h1 {
   color: #b28104;
+  font-family: "Harry Potter", sans-serif;
   font-size: 72px;
   padding: 20px;
   text-align: center;
@@ -30,6 +29,22 @@ header img {
   background-size: cover;
 }
 
+#login-form {
+  font-family: "Vollkorn", serif;
+  font-size: 20px;
+}
+
+#card-outline {
+  opacity: 70%;
+}
+
+.card-title {
+  font-family: "Vollkorn", serif;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+}
+
 #scrollpage {
   background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
   background-repeat: no-repeat;
@@ -42,7 +57,16 @@ header img {
 
 .scrolltext {
   margin: 45px;
+  font-size: 38px;
+  font-family: "La Belle Aurore", cursive;
+  text-align: center;
+}
+
+.tuitiontext {
+  margin: 45px;
   font-size: 30px;
+  font-family: "La Belle Aurore", cursive;
+  text-align: center;
 }
 
 #main {
