@@ -18,16 +18,27 @@
 
   </div>
   <body class="hero">
-    <header class="container-fluid">
-      <img src="/public/images/Hogwarts-Logo.png" alt="Hogwarts-Crest" />
-      <h1>Hogwarts</h1>
-      <h2>School of Witchcraft & Wizardry</h2>
-      <br />
+
+    <header>
+      <div class="row">
+        <div class="col-3">
+          <img
+            src="/public/images/Hogwarts-Logo.png"
+            alt="Hogwarts-Crest"
+            id="logo"
+          />
+        </div>
+        <div class="col-6">
+            <h1>Hogwarts</h1>
+            <h2>School of Witchcraft & Wizardry</h2>
+        </div>
+        <br />
+      </div>
     </header>
 
     {{{body}}}
 
-{{!-- BELOW SHOULD BE NEEDED AFTER WE ADD logout.js script I BELIEVE srry for yelling --}}
+    {{! BELOW SHOULD BE NEEDED AFTER WE ADD logout.js script I BELIEVE srry for yelling }}
     {{!-- {{#if loggedIn}}
       <script src="/js/logout.js"></script>
     {{/if}} --}}
