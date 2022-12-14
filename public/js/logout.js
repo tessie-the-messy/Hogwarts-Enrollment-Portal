@@ -1,4 +1,5 @@
 const logout = async () => {
+  console.log("logging ouuuuut")
   const response = await fetch("/api/students/logout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -10,4 +11,9 @@ const logout = async () => {
     alert("Failed to log out.");
   }
 };
-document.querySelector(".logout-form").addEventListener("click", logout);
+
+const logoutForm =document.querySelector(".logout-form")
+if (logoutForm) {
+  logoutForm.addEventListener("click", logout);
+}
+
