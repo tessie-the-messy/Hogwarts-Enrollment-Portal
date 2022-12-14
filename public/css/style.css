@@ -146,4 +146,27 @@ main {
   text-align: center;
   font-family: "Vollkorn", serif;
 }
+.col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardData{
+  display: flex;
+  justify-content: space-between;
+  font-family: "La Belle Aurore", cursive;
+}
+.day{
+  font-family: "La Belle Aurore", cursive;
+}
+.cardData p{
+  font-family: "La Belle Aurore", cursive;
+}
+.card{
+  background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2%;
+}
 /* end studentSchedule */
