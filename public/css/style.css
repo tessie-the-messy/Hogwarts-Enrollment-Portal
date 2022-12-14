@@ -27,6 +27,10 @@ header img {
   height: 110px;
 }
 
+.corner-crest {
+  margin-bottom: 30px;
+}
+
 .hero {
   background: url("/public/images/Screenshot\ 2022-12-11\ at\ 5.07.07\ PM.png") no-repeat;
   background-size: cover;
@@ -104,6 +108,32 @@ main {
   font-family: "Vollkorn", serif;
 }
 
+#sidebarMenu {
+  font-family: "Vollkorn", serif;
+  font-size: 20px;
+  text-align: center;
+
+  /* padding-left: 20px; */
+  /* border-radius: 15%; */
+}
+.navButton {
+  opacity: 70%;
+  /* border-radius: 15%; */
+  /* background-color: rgb(185, 126, 8); */
+}
+
+.navButton:hover {
+  color: #d49a07;
+  /* border-radius: 15%; */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logoutButton {
+  font-family: "Vollkorn", serif;
+  font-size: 18px;
+  color: #c08c09;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 /* #navbar {
   flex: 25%;
 }
@@ -145,5 +175,28 @@ main {
   font-style: italic;
   text-align: center;
   font-family: "Vollkorn", serif;
+}
+.col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardData{
+  display: flex;
+  justify-content: space-between;
+  font-family: "La Belle Aurore", cursive;
+}
+.day{
+  font-family: "La Belle Aurore", cursive;
+}
+.cardData p{
+  font-family: "La Belle Aurore", cursive;
+}
+.scheduleCardFull{
+  background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2%;
 }
 /* end studentSchedule */
