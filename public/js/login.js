@@ -14,6 +14,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
+      console.log("trying to go to landing page");
       document.location.replace("/landingpage");
     } else {
       alert("Failed to log in.");
@@ -45,10 +46,12 @@ const enrollFormHandler = async (event) => {
   }
 };
 
-document
-  .querySelector(".login-form")
-  .addEventListener("submit", loginFormHandler);
+// const loginForm = document.querySelector(".login-form");
+// if (loginForm) {
+//   loginForm.addEventListener("submit", loginFormHandler);
+// }
 
-document
-  .querySelector(".enroll-form")
-  .addEventListener("submit", enrollFormHandler);
+// const enrollForm = document.querySelector(".enroll-form");
+// if (enrollForm) {
+//   enrollForm.addEventListener("submit", enrollFormHandler);
+// }

@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
 const { Student, House } = require("../../models");
+const bcrypt = require("bcrypt");
 
 // CREATE newStudent
 router.post("/", async (req, res) => {
@@ -19,7 +20,11 @@ router.post("/", async (req, res) => {
     req.session.save(() => {
       req.session.loggedIn = true;
       req.session.student = dbStudentData;
-      res.status(200).json(dbStudentData);
+      res.render("landingpage", {
+        loggedIn: true,
+      student: dbStudentData.get({
+        plain: true})
+    })
     });
   } catch (err) {
     console.log(err);
@@ -36,7 +41,7 @@ router.post("/login", async (req, res) => {
         email: req.body.email,
       },
     });
-
+    // Error if email is wrong
     if (!dbStudentData) {
       res
         .status(400)
@@ -44,8 +49,12 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    const validPassword = await dbStudentData.checkPassword(req.body.password);
-
+    const validPassword = await bcrypt.compare(
+      req.body.password,
+      dbStudentData.password
+    );
+    // dbStudentData.checkPassword(req.body.password);
+    // Error if password is wrong
     if (!validPassword) {
       res
         .status(400)
@@ -53,12 +62,27 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    req.session.save(() => {
+    req.session.save((err) => {
+      if (err) throw(err)
       req.session.loggedIn = true;
-      // .json({ student: dbStudentData, message: "You are now logged in!" });
+      req.session.student = dbStudentData;
+      console.log(dbStudentData.get({
+        plain: true
+      }));
+      // res.status(200).json(dbStudentData);
+      // res.json({
+      //   loggedIn: true,
+      //   student: dbStudentData,
+      //   message: "You are now logged in!",
+      // });
+      res.render("landingpage", {
+          loggedIn: true,
+        student: dbStudentData.get({
+          plain: true})
+      })
     });
 
-    res.render("landingpage", { dbStudentData });
+    // res.render("landingpage", { dbStudentData });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -67,12 +91,17 @@ router.post("/login", async (req, res) => {
 
 // Logout
 router.post("/logout", (req, res) => {
+  console.log("============");
+  console.log("============");
+  console.log(req.session);
+  console.log("============");
+  console.log("============");
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
     });
   } else {
-    res.status(404).end();
+    res.status(400).end();
   }
 });
 

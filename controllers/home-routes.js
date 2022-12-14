@@ -1,20 +1,32 @@
 const router = require("express").Router();
 // const { House, Roster, Student, Subject, Teacher } = require("../models");
 
-
 router.get("/", async (req, res) => {
   res.render("login");
 });
 
 // If logged in, skip login page, go straight to home page
 // GET homepage/landingpage
-router.get("/landingpage", (req, res) => {
-  console.log(req.session);
+router.get("/landingpage", async (req, res) => {
+  try {
+    if (req.session.loggedIn) {
+      console.log("this is our console log");
 
-  res.render("landingpage", {
-    loggedIn: req.session.loggedIn,
-    student: req.session.student,
-  });
+      res.render("landingpage", {
+        loggedIn: req.session.loggedIn,
+        student: req.session.student,
+      });
+    } else {
+      console.log(req.session)
+      res.redirect("/")
+      // res.render("login", {
+      //   loggedIn: req.session.loggedIn,
+      // });
+    }
+  } catch (err) {
+    console.log(err);
+    res.status(400).json(err);
+  }
 });
 
 // GET
