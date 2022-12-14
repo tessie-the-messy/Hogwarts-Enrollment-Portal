@@ -192,7 +192,7 @@ main {
 .cardData p{
   font-family: "La Belle Aurore", cursive;
 }
-.card{
+.scheduleCardFull{
   background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
   background-repeat: no-repeat;
   background-position: center;
