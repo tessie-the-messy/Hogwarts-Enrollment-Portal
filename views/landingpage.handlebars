@@ -1,7 +1,7 @@
 {{#if loggedIn}}
   <h1>Welcome,</h1>
   <h2>{{student.first_name}} {{student.last_name}}</h2>
-  <button id="profile">Profile</button>
+  <button id="profile" data-id={{student.id}}>Profile</button>
   <button id="schedule">Schedule</button>
   <button type="button" class="btn btn-dark logout-form logoutButton">Logout</button>
 {{/if}}
