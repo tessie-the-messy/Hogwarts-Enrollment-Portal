@@ -1,5 +1,5 @@
 const router = require("express").Router();
-// const { House, Roster, Student, Subject, Teacher } = require("../models");
+const { House, Roster, Student, Subject, Teacher } = require("../models");
 
 router.get("/", async (req, res) => {
   res.render("login");
@@ -11,14 +11,14 @@ router.get("/landingpage", async (req, res) => {
   try {
     if (req.session.loggedIn) {
       console.log("this is our console log");
-
+      console.log(req.session, "oh god, is this the right one?");
       res.render("landingpage", {
         loggedIn: req.session.loggedIn,
         student: req.session.student,
       });
     } else {
-      console.log(req.session)
-      res.redirect("/")
+      console.log(req.session);
+      res.redirect("/");
       // res.render("login", {
       //   loggedIn: req.session.loggedIn,
       // });
@@ -30,13 +30,21 @@ router.get("/landingpage", async (req, res) => {
 });
 
 // GET
-router.get("/studentprofile", (req, res) => {
+router.get("/studentprofile/:id", async (req, res) => {
   console.log(req.session);
+  try {
+    const studentData = await Student.findByPk(req.params.id, { include: [House, Teacher] });
+    const students = studentData.get({ plain: true });
+    console.log(students);
 
-  res.render("studentprofile", {
-    loggedIn: req.session.loggedIn,
-    student: req.session.student,
-  });
+    res.render("studentprofile", {
+      students,
+      loggedIn: req.session.loggedIn,
+      student: req.session.student,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 // GET schedule

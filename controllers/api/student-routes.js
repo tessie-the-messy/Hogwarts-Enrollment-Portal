@@ -15,16 +15,19 @@ router.post("/", async (req, res) => {
       email: req.body.email,
       password: req.body.password,
       house_id: randomHouse.id,
+      teacher_id: 1,
     });
+    //create function to assign correct teacher id for appropriate house (or make it random if we run out of time)
 
     req.session.save(() => {
       req.session.loggedIn = true;
       req.session.student = dbStudentData;
       res.render("landingpage", {
         loggedIn: true,
-      student: dbStudentData.get({
-        plain: true})
-    })
+        student: dbStudentData.get({
+          plain: true,
+        }),
+      });
     });
   } catch (err) {
     console.log(err);
@@ -43,32 +46,27 @@ router.post("/login", async (req, res) => {
     });
     // Error if email is wrong
     if (!dbStudentData) {
-      res
-        .status(400)
-        .json({ message: "Incorrect email or password. Please try again!" });
+      res.status(400).json({ message: "Incorrect email or password. Please try again!" });
       return;
     }
 
-    const validPassword = await bcrypt.compare(
-      req.body.password,
-      dbStudentData.password
-    );
+    const validPassword = await bcrypt.compare(req.body.password, dbStudentData.password);
     // dbStudentData.checkPassword(req.body.password);
     // Error if password is wrong
     if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: "Incorrect email or password. Please try again!" });
+      res.status(400).json({ message: "Incorrect email or password. Please try again!" });
       return;
     }
 
     req.session.save((err) => {
-      if (err) throw(err)
+      if (err) throw err;
       req.session.loggedIn = true;
       req.session.student = dbStudentData;
-      console.log(dbStudentData.get({
-        plain: true
-      }));
+      console.log(
+        dbStudentData.get({
+          plain: true,
+        })
+      );
       // res.status(200).json(dbStudentData);
       // res.json({
       //   loggedIn: true,
@@ -76,10 +74,11 @@ router.post("/login", async (req, res) => {
       //   message: "You are now logged in!",
       // });
       res.render("landingpage", {
-          loggedIn: true,
+        loggedIn: true,
         student: dbStudentData.get({
-          plain: true})
-      })
+          plain: true,
+        }),
+      });
     });
 
     // res.render("landingpage", { dbStudentData });

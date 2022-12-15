@@ -1,23 +1,31 @@
 <div id="navbar">{{> nav}}</div>
 
-<main class="hero container">
+<main class="container scrollBkg">
   <p class="profile-header">Student Profile</p>
+  <br>
     <div class="row">
       <section class="col-lg-6">
         <ul class="profile-info">
-          <li>Name: {{first_name}}</li>
-          <li>Surname: {{last_name}}</li>
-          <li>ID: {{student_id}}</li>
-          <li>Email Address: {{email}}</li>
-          <li>Head of House: {{teacher_id}}</li>
+          <li>Name: {{students.first_name}}</li>
+          <li>Surname: {{students.last_name}}</li>
+          <li>ID: {{students.id}}</li>
+          <li>Email Address: {{students.email}}</li>
+          <li>Head of House: {{students.house.house_head}}</li>
         </ul>
       </section>
       <section class="col-lg-6">
-        <p class="house-header">You are in...</p>
-        <p class="house-name">{{house_name}}</p>
+        <p class="house-header">The Sorting Hat has placed you into...</p>
+        {{!-- {{#if students}} --}}
+        <p class="house-name">{{students.house.house_name}}</p>
+        {{!-- {{/if}} --}}
         {{!-- placeholder image --}}
-        <img src="/public/images/gryffindorCrest.jpg" alt="lion-crest">
-        <p class="house-desc">{{description}}</p>
+        <div>
+          <img class="house-crest" src={{students.house.file_name}} alt="house-image">
+        </div>
+        <p class="house-desc">{{students.house.description}}</p>
       </section>
     </div>
 </main>
+<script>
+  console.log({{House}})
+</script>
