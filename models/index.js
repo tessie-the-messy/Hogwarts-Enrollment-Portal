@@ -16,6 +16,14 @@ Student.belongsTo(House, {
   foreignKey: "house_id",
 });
 
+Teacher.hasMany(Student, {
+  foreignKey: "teacher_id",
+});
+
+Student.belongsTo(Teacher, {
+  foreignKey: "teacher_id",
+});
+
 House.hasMany(Teacher, {
   foreignKey: "house_id",
   onDelete: "CASCADE",

@@ -85,29 +85,52 @@ main {
 }
 
 #logo {
-  margin-top: 35;
+  margin-top: 35px;
 }
 
 .profile-header {
   font-family: "Harry Potter", sans-serif;
+  text-align: center;
+  font-size: 50px;
 }
 
 .profile-info {
-  font-family: "Vollkorn", serif;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 35px;
+  text-align: center;
 }
 
 .house-header {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 38px;
+  /* text-align: center; */
+}
+
+/* house name may not be needed since house crests have the name on them? */
+.house-name {
   font-family: "Harry Potter", sans-serif;
 }
 
-.house-name {
-  font-family: "Harry Potter", sans-serif;
+.house-crest {
+  border-radius: 43%;
+  width: 400px;
+  height: 400px;
+  /* box-shadow: 0 0 20px 20px black inset; */
+  /* align-items: center; */
 }
 
 .house-desc {
   font-family: "Vollkorn", serif;
 }
 
+.scrollBkg {
+  /* padding-top: 20px; */
+  background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2%;
+}
 #sidebarMenu {
   font-family: "Vollkorn", serif;
   font-size: 20px;
@@ -118,7 +141,7 @@ main {
 }
 .navButton {
   opacity: 70%;
-  /* border-radius: 15%; */
+
   /* background-color: rgb(185, 126, 8); */
 }
 
@@ -134,6 +157,15 @@ main {
   color: #c08c09;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
+#profile {
+  background-image: url(/public/images/Screenshot\ 2022-12-14\ at\ 1.52.00\ PM.png);
+}
+
+#schedule {
+  background-image: url(/public/images/schedule\ icon.jpeg);
+}
+
 /* #navbar {
   flex: 25%;
 }
@@ -176,23 +208,23 @@ main {
   text-align: center;
   font-family: "Vollkorn", serif;
 }
-.col{
+.col {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.cardData{
+.cardData {
   display: flex;
   justify-content: space-between;
   font-family: "La Belle Aurore", cursive;
 }
-.day{
+.day {
   font-family: "La Belle Aurore", cursive;
 }
-.cardData p{
+.cardData p {
   font-family: "La Belle Aurore", cursive;
 }
-.scheduleCardFull{
+.scheduleCardFull {
   background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
   background-repeat: no-repeat;
   background-position: center;

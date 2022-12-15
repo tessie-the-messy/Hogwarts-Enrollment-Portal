@@ -56,6 +56,13 @@ Student.init(
         key: "id",
       },
     },
+    teacher_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "teacher",
+        key: "id",
+      },
+    },
   },
   {
     hooks: {
