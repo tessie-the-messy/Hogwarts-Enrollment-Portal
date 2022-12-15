@@ -1,8 +1,40 @@
 {{#if loggedIn}}
   <h1>Welcome,</h1>
   <h2>{{student.first_name}} {{student.last_name}}</h2>
-  <button id="profile" data-id={{student.id}}>Profile</button>
-  <button id="schedule">Schedule</button>
-  <button type="button" class="btn btn-dark logout-form logoutButton">Logout</button>
+  <br />
+  <div class="container">
+    <div class="row justify-content-around">
+    <div class="scrollBkgLand" style="width: 18rem;">
+      <img
+        src="../public/images/Hogwarts-Logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Student Profile</h5>
+        <button id="profile" data-id={{student.id}}>Profile</button>
+        {{! <a href="#" class="btn btn-primary">Go somewhere</a> }}
+      </div>
+    </div>
+    <div class="scrollBkgLand" style="width: 18rem;">
+      <img
+        src="../public/images/Hogwarts-Logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Schedule</h5>
+        <button id="schedule">Schedule</button>
+        {{! <a href="#" class="btn btn-primary">Go somewhere</a> }}
+      </div>
+    </div>
+    </div>
+  </div>
+  <br />
+
+  <button
+    type="button"
+    class="btn btn-dark logout-form logoutButton"
+  >Logout</button>
 {{/if}}
 <script src="/public/js/landingpage.js"></script>
