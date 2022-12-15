@@ -132,6 +132,16 @@ main {
   background-size: cover;
   border-radius: 2%;
 }
+
+.scrollBkgLand {
+  /* padding-top: 20px; */
+  background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2%;
+}
+
 #sidebarMenu {
   font-family: "Vollkorn", serif;
   font-size: 20px;
@@ -161,9 +171,13 @@ main {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#profile {
-  background-image: url(/public/images/Screenshot\ 2022-12-14\ at\ 1.52.00\ PM.png);
+.container {
+  margin-top: 50px;
 }
+
+/* #profile {
+  background-image: url(/public/images/Screenshot\ 2022-12-14\ at\ 1.52.00\ PM.png);
+} */
 
 /* #schedule {
   background-image: url(/public/images/schedule\ icon.jpeg);
