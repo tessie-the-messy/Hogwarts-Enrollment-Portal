@@ -1,11 +1,12 @@
 <nav id="sidebarMenu" class="collapse d-lg-inline-block sidebar collapse col-lg-2">
   <div>
     <div class="navButton list-group list-group-flush mx-3 mt-4">
-      <a href="#" class="navButton list-group-item list-group-item-action py-4 ripple"><i class="fas fa-lock fa-fw me-3"></i><span>Profile</span></a>
+      <a href="#" class="navButton list-group-item list-group-item-action py-4 ripple"><i class="fas fa-lock fa-fw me-3"></i><span id="profile" data-id={{student.id}}>Profile</span></a>
       <a href="#" class="navButton list-group-item list-group-item-action py-4 ripple">
-        <i class="fas fa-chart-pie fa-fw me-3"></i><span>Schedule</span>
+        <i class="fas fa-chart-pie fa-fw me-3"></i><span id="schedule">Schedule</span>
       </a>
       <button type="button" class="btn btn-dark logout-form logoutButton">Logout</button>
     </div>
   </div>
 </nav>
+<script src="/public/js/landingpage.js"></script>
