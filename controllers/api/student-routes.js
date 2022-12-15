@@ -46,15 +46,22 @@ router.post("/login", async (req, res) => {
     });
     // Error if email is wrong
     if (!dbStudentData) {
-      res.status(400).json({ message: "Incorrect email or password. Please try again!" });
+      res
+        .status(400)
+        .json({ message: "Incorrect email or password. Please try again!" });
       return;
     }
 
-    const validPassword = await bcrypt.compare(req.body.password, dbStudentData.password);
+    const validPassword = await bcrypt.compare(
+      req.body.password,
+      dbStudentData.password
+    );
     // dbStudentData.checkPassword(req.body.password);
     // Error if password is wrong
     if (!validPassword) {
-      res.status(400).json({ message: "Incorrect email or password. Please try again!" });
+      res
+        .status(400)
+        .json({ message: "Incorrect email or password. Please try again!" });
       return;
     }
 
@@ -97,7 +104,7 @@ router.post("/logout", (req, res) => {
   console.log("============");
   if (req.session.loggedIn) {
     req.session.destroy(() => {
-      res.status(204).end();
+      res.status(200).end();
     });
   } else {
     res.status(400).end();

@@ -46,12 +46,12 @@ const enrollFormHandler = async (event) => {
   }
 };
 
-// const loginForm = document.querySelector(".login-form");
-// if (loginForm) {
-//   loginForm.addEventListener("submit", loginFormHandler);
-// }
+const loginForm = document.querySelector(".login-form");
+if (loginForm) {
+  loginForm.addEventListener("submit", loginFormHandler);
+}
 
-// const enrollForm = document.querySelector(".enroll-form");
-// if (enrollForm) {
-//   enrollForm.addEventListener("submit", enrollFormHandler);
-// }
+const enrollForm = document.querySelector(".enroll-form");
+if (enrollForm) {
+  enrollForm.addEventListener("submit", enrollFormHandler);
+}
