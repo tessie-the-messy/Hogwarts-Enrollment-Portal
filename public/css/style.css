@@ -276,31 +276,16 @@ main {
 } */
 
 /* studentSchedule */
-.scheduleHeader {
-  color: #b28104;
-  font-size: 68px;
-  padding: 20px;
-  text-align: center;
-  font-family: "Harry Potter", sans-serif;
-}
 
 .day {
   text-align: center;
-  font-family: "Vollkorn", serif;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 50px;
+  padding: 15px;
 }
 
-.subject {
-  text-align: center;
-  font-family: "Vollkorn", serif;
-}
-
-.teacher {
-  text-align: center;
-  font-family: "Vollkorn", serif;
-}
 .time {
   font-style: italic;
-  text-align: center;
   font-family: "Vollkorn", serif;
 }
 .col {
@@ -309,15 +294,12 @@ main {
   justify-content: center;
 }
 .cardData {
-  display: flex;
-  justify-content: space-between;
-  font-family: "La Belle Aurore", cursive;
+  /* display: flex; */
+  font-family: "Vollkorn", serif;
 }
-.day {
-  font-family: "La Belle Aurore", cursive;
-}
+
 .cardData p {
-  font-family: "La Belle Aurore", cursive;
+  font-size: 24px;
 }
 .scheduleCardFull {
   background-image: url("/public/images/png-clipart-brown-paper-scroll-paper-scroll-template-parchment-old-background-miscellaneous-rectangle-thumbnail.png");
