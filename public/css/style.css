@@ -208,18 +208,11 @@ main {
 
 .day {
   text-align: center;
-  font-family: "Vollkorn", serif;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 50px;
+  padding: 15px;
 }
 
-.subject {
-  text-align: center;
-  font-family: "Vollkorn", serif;
-}
-
-.teacher {
-  text-align: center;
-  font-family: "Vollkorn", serif;
-}
 .time {
   font-style: italic;
   text-align: center;
@@ -233,14 +226,10 @@ main {
 .cardData {
   display: flex;
   justify-content: space-between;
-  font-family: "La Belle Aurore", cursive;
+  font-family: "Vollkorn", serif;
 }
-.day {
-  font-family: "La Belle Aurore", cursive;
-  font-size: 50px;
-}
+
 .cardData p {
-  font-family: "La Belle Aurore", cursive;
   font-size: 24px;
 }
 .scheduleCardFull {
