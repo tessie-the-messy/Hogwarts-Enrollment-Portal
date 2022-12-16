@@ -113,32 +113,83 @@ main {
 }
 
 .profile-info {
-  font-family: "La Belle Aurore", cursive;
-  font-size: 35px;
+  font-family: "Vollkorn", serif;
+  font-size: 22px;
   text-align: center;
+  list-style: none;
+}
+
+.container2 {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.tsunami {
+  width: inherit;
+  height: inherit;
 }
 
 .house-header {
   font-family: "La Belle Aurore", cursive;
   font-size: 38px;
-  /* text-align: center; */
+  margin-left: 15px;
+  text-align: center;
 }
 
-/* house name may not be needed since house crests have the name on them? */
 .house-name {
   font-family: "Harry Potter", sans-serif;
+  opacity: 0%;
 }
 
 .house-crest {
   border-radius: 43%;
   width: 400px;
   height: 400px;
+  /* margin-left: 100px; */
+  /* padding-bottom: 50px; */
   /* box-shadow: 0 0 20px 20px black inset; */
-  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .house-desc {
+  padding-top: 20px;
+  /* margin: 40px; */
   font-family: "Vollkorn", serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .scrollBkg {
@@ -196,6 +247,7 @@ main {
 
 .container {
   margin-top: 50px;
+  margin-bottom: 35px;
 }
 
 .dumbledore {

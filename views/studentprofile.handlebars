@@ -2,9 +2,7 @@
 
 <main class="container scrollBkg">
   <p class="profile-header">Student Profile</p>
-  <br>
-    <div class="row">
-      <section class="col-lg-6">
+      <section>
         <ul class="profile-info">
           <li>Name: {{students.first_name}}</li>
           <li>Surname: {{students.last_name}}</li>
@@ -13,15 +11,19 @@
           <li>Head of House: {{students.house.house_head}}</li>
         </ul>
       </section>
-      <section class="col-lg-6">
+  <br>
+    <div class="row">
+      <section>
         <p class="house-header">The Sorting Hat has placed you into...</p>
-        {{!-- {{#if students}} --}}
+        <div class="container2">
+      <div class="avatar">
+        <img class="tsunami" src="/public/images/tsunami.jpg" alt="Skytsunami" />
+      </div>
+      <div class="content">
         <p class="house-name">{{students.house.house_name}}</p>
-        {{!-- {{/if}} --}}
-        {{!-- placeholder image --}}
-        <div>
+        <div class="d-flex justify-content-center">     
           <img class="house-crest" src={{students.house.file_name}} alt="house-image">
-        </div>
+        </div>    
         <p class="house-desc">{{students.house.description}}</p>
       </section>
     </div>
