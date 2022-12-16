@@ -1,40 +1,30 @@
 {{#if loggedIn}}
+  <button type="button" class="btn btn-dark logout-form logoutButton2">Logout</button>
   <h1>Welcome,</h1>
-  <h2>{{student.first_name}} {{student.last_name}}</h2>
+  <h2 class="name">{{student.first_name}} {{student.last_name}}</h2>
   <br />
+  <h3>Where would you like to go?</h3>
   <div class="container">
     <div class="row justify-content-around">
-    <div class="scrollBkgLand" style="width: 18rem;">
-      <img
-        src="../public/images/Hogwarts-Logo.png"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">Student Profile</h5>
-        <button id="profile" data-id={{student.id}}>Profile</button>
-        {{! <a href="#" class="btn btn-primary">Go somewhere</a> }}
-      </div>
-    </div>
-    <div class="scrollBkgLand" style="width: 18rem;">
-      <img
-        src="../public/images/Hogwarts-Logo.png"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">Schedule</h5>
-        <button id="schedule">Schedule</button>
-        {{! <a href="#" class="btn btn-primary">Go somewhere</a> }}
-      </div>
-    </div>
+      <button type="button" class="scrollBkgLand btn" id="profile" data-id={{student.id}} style="width: 18rem;">
+        <div class="d-flex justify-content-center">
+          <img src="../public/images/303099678096211.png" class="card-img-top dumbledore" alt="dumbledore" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Student Profile</h5>
+
+        </div>
+      </button>
+      <button type="button" class="scrollBkgLand btn" id="schedule" style="width: 18rem;">
+        <img src="../public/images/dobby profile.png" class="card-img-top dobby" alt="dobby" />
+        <div class="card-body">
+          <h5 class="card-title">Schedule</h5>
+
+        </div>
+      </button>
     </div>
   </div>
-  <br />
 
-  <button
-    type="button"
-    class="btn btn-dark logout-form logoutButton"
-  >Logout</button>
+  {{! <button type="button" class="btn btn-dark logout-form logoutButton">Logout</button> }}
 {{/if}}
 <script src="/public/js/landingpage.js"></script>

@@ -22,6 +22,24 @@ h2 {
   margin-bottom: 20px;
 }
 
+.name {
+  font-family: "Harry Potter", sans-serif;
+  color: #b28104;
+  text-align: center;
+  font-size: 44px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: "Harry Potter", sans-serif;
+  color: #b28104;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 header img {
   width: 180px;
   height: 110px;
@@ -32,8 +50,7 @@ header img {
 }
 
 .hero {
-  background: url("/public/images/Screenshot\ 2022-12-11\ at\ 5.07.07\ PM.png")
-    no-repeat;
+  background: url("/public/images/Screenshot\ 2022-12-11\ at\ 5.07.07\ PM.png") no-repeat;
   background-size: cover;
 }
 
@@ -47,7 +64,7 @@ main {
 }
 
 #card-outline {
-  opacity: 70%;
+  opacity: 90%;
 }
 
 .card-title {
@@ -159,29 +176,38 @@ main {
 .navButton:hover {
   color: #d49a07;
   /* border-radius: 15%; */
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logoutButton {
   font-family: "Vollkorn", serif;
   font-size: 18px;
   color: #c08c09;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logoutButton2 {
+  font-family: "Vollkorn", serif;
+  font-size: 18px;
+  color: #c08c09;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 50px;
 }
 
 .container {
   margin-top: 50px;
 }
 
-/* #profile {
-  background-image: url(/public/images/Screenshot\ 2022-12-14\ at\ 1.52.00\ PM.png);
-} */
-
-/* #schedule {
-  background-image: url(/public/images/schedule\ icon.jpeg);
-} */
+.dumbledore {
+  width: 100px;
+  height: 200px;
+  align-items: center;
+}
+.dobby {
+  width: 250px;
+  height: 200px;
+  align-items: center;
+}
 
 /* #navbar {
   flex: 25%;
